@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JustLogin.SignUpPage" Title="SignUp">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+        <Image x:Name="BgImage" Source="b.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+            <StackLayout
+                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                AbsoluteLayout.LayoutFlags="All"
+                VerticalOptions="Center">
+                <StackLayout>
+                    <Image HeightRequest="50" Margin="25" Source="just.png"/>
+                    <Frame OutlineColor="Accent"  
+                        BackgroundColor="White" 
+                        Opacity="0.7" 
+                        CornerRadius="5"
+                        HasShadow="true"
+                        WidthRequest="275" 
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand">
+                    <StackLayout VerticalOptions="Center">
+                        <Entry x:Name="usernameEntry" Placeholder="username" />
+                        <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="password" />
+                        <Entry x:Name="emailEntry" Placeholder="email"/>
+                        <Button FontSize="18" BackgroundColor="#FF5252" TextColor="White" FontAttributes="Bold" Text="Sign Up" Clicked="OnSignUpButtonClicked"/>
+                        <Label x:Name="messageLabel" />       
+                    </StackLayout>
+                    </Frame>
+                </StackLayout>    
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

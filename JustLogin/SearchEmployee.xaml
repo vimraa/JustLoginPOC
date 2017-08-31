@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    x:Class="JustLogin.SearchEmployee" BackgroundColor="White" Title="Search">
+
+   <ContentPage.ToolbarItems>
+        <ToolbarItem Text="LogOut" Clicked="OnLogoutButtonClicked" />
+    </ContentPage.ToolbarItems>
+        <AbsoluteLayout>
+        <Image Source="b.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+            <StackLayout
+                AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                AbsoluteLayout.LayoutFlags="All"
+                VerticalOptions="Center">
+            </StackLayout>
+            <Frame 
+                BackgroundColor="White" 
+                Opacity="0.6" 
+                VerticalOptions="FillAndExpand" 
+                HorizontalOptions="FillAndExpand" 
+                HeightRequest="600">
+            <StackLayout>
+                <SearchBar Placeholder="search Employee" ></SearchBar>
+                <ScrollView>
+                <Frame HeightRequest="500">
+                    <ListView x:Name="MainListView" SeparatorVisibility="Default">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+                                    <Label Text="{Binding EmpName}" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    </ListView>
+                </Frame>
+                </ScrollView>
+                </StackLayout>
+            </Frame>
+        </AbsoluteLayout>
+    </ContentPage>

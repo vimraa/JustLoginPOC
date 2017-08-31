@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    x:Class="JustLogin.Home" BackgroundColor="White" Title="Home">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
+    </ContentPage.ToolbarItems>
+	<StackLayout>
+        <StackLayout> 
+            <AbsoluteLayout>
+                <Image Source="f.jpg"
+                    Aspect="AspectFill"
+                    AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                    AbsoluteLayout.LayoutFlags="All"/>
+                <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="200" />
+                    </Grid.RowDefinitions>
+                        <controls:CircleImage Source="logo.png"
+                            BorderThickness="2" 
+                            BorderColor="#004D40"
+                            HeightRequest="90" 
+                            WidthRequest="90"
+                            Grid.Row="0" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Center">
+                        </controls:CircleImage>
+                    <Label Text="JUSTLOGIN" TextColor="#E0F2F1" 
+                            VerticalOptions="End" 
+                            HorizontalOptions="Center" 
+                            Margin="20" 
+                            FontAttributes="Bold" 
+                            FontSize="25"/>
+                 </Grid>
+                 </StackLayout>
+             </AbsoluteLayout>
+        </StackLayout>
+        <StackLayout>
+             <AbsoluteLayout>
+                <Image Source="b.jpg"
+                    Aspect="AspectFill"
+                    AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0,1.0"
+                    AbsoluteLayout.LayoutFlags="All" 
+                    Margin="-10"/>
+               <StackLayout
+                    BackgroundColor="White" Opacity=".7"
+                    AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                    AbsoluteLayout.LayoutFlags="All"
+                    VerticalOptions="Center" Margin="-10">
+                <Frame HeightRequest="400"> 
+                <ScrollView>
+                    <Grid >
+                        <Grid.RowDefinitions>
+                             <RowDefinition Height="*"/>
+                             <RowDefinition Height="*"/>
+                             <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                             <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+             
+                        <Button BorderColor="#0D47A1" BorderWidth="5" BackgroundColor="#1565C0" FontAttributes="Bold" Text="Profile" Grid.Row="0" Grid.Column="0" FontSize="16" TextColor="#212121" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Clicked="OnClickedProfile" />
+                        <Button BorderColor="#006064" BorderWidth="5" BackgroundColor="#00838F" FontAttributes="Bold" Text="Search" Grid.Row="0" Grid.Column="1" FontSize="16" TextColor="#212121" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Clicked="OnClickedSearch"/>
+                        <Button BorderColor="#00B0FF" BorderWidth="5" BackgroundColor="#80D8FF" FontAttributes="Bold" Text="Time Tracking" Grid.Row="1" Grid.Column="0" FontSize="16" TextColor="#212121" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                        <Button BorderColor="#C62828" BorderWidth="5" BackgroundColor="#EF5350" FontAttributes="Bold" Text="Payslip" Grid.Row="1" Grid.Column="1" FontSize="16" TextColor="#212121" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                        <Button BorderColor="#9E9D24" BorderWidth="5" BackgroundColor="#C0CA33" FontAttributes="Bold" Text="Teams" Grid.Row="2" Grid.Column="0" FontSize="16" TextColor="#212121" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                        <Button BorderColor="#EF6C00" BorderWidth="5" BackgroundColor="#FF9800" FontAttributes="Bold" Text="Expense" Grid.Row="2" Grid.Column="1" FontSize="16" TextColor="#212121" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                    </Grid>
+                 </ScrollView>
+                 </Frame>
+                 </StackLayout>
+             </AbsoluteLayout>
+         </StackLayout>
+     </StackLayout>
+</ContentPage>

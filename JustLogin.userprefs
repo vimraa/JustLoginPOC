@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{45C99FF1-0800-4049-A3B9-03A0368CA4DE}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.JustLogin.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.7DCB9F6A-2801-4F93-8F3D-831B4F4E2914">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.JustLogin.iOS>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JustLogin" expanded="True">
+            <Node name="JustLogin" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="ProfilePage.xaml" expanded="True" />
+              <Node name="SearchEmployee.xaml" expanded="True" />
+              <Node name="SignUpPage.xaml" expanded="True" />
+            </Node>
+            <Node name="JustLogin.iOS" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/intern2017/Downloads/JustLogin-2/JustLogin/ProfilePage.xaml" relfile="JustLogin/ProfilePage.xaml" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.JustLogin.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JustLogin.LoginPage" Title="Login">
+	<ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Up" Clicked="OnSignUpButtonClicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+        <Image Source="b.jpg"
+               Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+               AbsoluteLayout.LayoutFlags="All"/>
+        <StackLayout
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All"
+            VerticalOptions="Center">
+            <StackLayout>
+                <Image HeightRequest="50" 
+                       Margin="2" 
+                       Source="just.png"/>
+                <Frame OutlineColor="Accent"  
+                        BackgroundColor="White" 
+                        Opacity="0.7" 
+                        CornerRadius="5"
+                        HasShadow="true"
+                        WidthRequest="275" 
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand">
+                <StackLayout 
+                        VerticalOptions="Center">
+                    <Entry x:Name="usernameEntry" Placeholder="Username"/>
+                    <Entry x:Name="passwordEntry" Placeholder="password" IsPassword="true"/>
+                    <Button 
+                                FontSize="18" 
+                                BackgroundColor="#FF5252" 
+                                Text="Login" TextColor="White" 
+                                FontAttributes="Bold" 
+                                Clicked="OnLoginButtonClicked">
+                                </Button>
+                    <Label  
+                            Text="forgot Password!" 
+                            XAlign="Center" 
+                            Margin="10" 
+                            TextColor="Black">
+                            </Label>
+                     <Label x:Name="messageLabel" />       
+                </StackLayout>
+                </Frame>
+           </StackLayout>    
+        </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

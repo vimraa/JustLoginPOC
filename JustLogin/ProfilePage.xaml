@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+    x:Class="JustLogin.ProfilePage" BackgroundColor="White" Title="Profile">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout> 
+            <AbsoluteLayout>
+                <Image Source="f.jpg"
+                    Aspect="AspectFill"
+                    AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                    AbsoluteLayout.LayoutFlags="All"/>
+                       <StackLayout 
+                            HorizontalOptions="Center" 
+                            VerticalOptions="Start" Margin="10">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="80" />
+                                    <RowDefinition Height="30"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto" />
+                                </Grid.ColumnDefinitions>
+                                <controls:CircleImage Source="b.jpg" 
+                                    WidthRequest="100" 
+                                    BorderThickness="2" 
+                                    BorderColor="#004D40"
+                                    HeightRequest="100" 
+                                    Aspect="AspectFill" 
+                                    Grid.Row="0" 
+                                    Grid.Column="0" 
+                                    Grid.RowSpan="3" 
+                                    VerticalOptions="Center">
+                                </controls:CircleImage>
+                                <Label Text="{Binding EmpName}" Grid.Row="0" Grid.Column="1" FontSize="22" Margin="10" TextColor="White" VerticalOptions="CenterAndExpand"/>
+                                <Label Text="{Binding EmpDesignation}" Grid.Row="1" Grid.Column="1" FontSize="15" TextColor="White" Margin="5" VerticalOptions="Start"/>
+                            </Grid>
+                       </StackLayout>
+          </AbsoluteLayout>
+          <AbsoluteLayout>
+                <Image Source="b.jpg"
+                    Aspect="AspectFill"
+                    AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0,1.0"
+                    AbsoluteLayout.LayoutFlags="All" 
+                    Margin="-10"/>
+                <StackLayout
+                    BackgroundColor="White" Opacity=".6"
+                    AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+                    AbsoluteLayout.LayoutFlags="All"
+                    VerticalOptions="Center" Margin="-10">
+                <Frame>
+                <ScrollView>
+                <StackLayout>
+                    <Label Text="Personal info:" FontSize="20" TextColor="#0D47A1" FontAttributes="Bold"/>
+                    <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label FontSize="14" Text="Emp id:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Label FontSize="14" Text="{Binding EmpID}" TextColor="Black" AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>     
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label FontSize="14" Text="Address:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Label Text="{Binding EmpAddress}" TextColor="Black"  AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label FontSize="14" Text="Phone no:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Label Text="{Binding EmpPhone}" TextColor="Black"  AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label FontSize="14" Text="Email id:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Label Text="{Binding EmpEmail}" TextColor="Black"  AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                    <Label Text="Personal info:" FontSize="20" TextColor="#0D47A1" FontAttributes="Bold"/>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                     <Label FontSize="14" Text="Emp id:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                     <Label FontSize="14" Text="1234a" TextColor="Black" AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>     
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label FontSize="14" Text="Address:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Label Text="Singapore" TextColor="Black"  AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label FontSize="14" Text="Phone no:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Label Text="435436654" TextColor="Black"  AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                <AbsoluteLayout AbsoluteLayout.LayoutBounds="0,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional" Padding="5,0,0,0">
+                    <Label FontSize="14" Text="Email id:" TextColor="#2196F3" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="0,10,.25,50" AbsoluteLayout.LayoutFlags="WidthProportional" />
+                    <Label Text="XXXX@gmail.com" TextColor="Black"  AbsoluteLayout.LayoutBounds="1,10,.75,50" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional" />
+                </AbsoluteLayout>
+                </StackLayout>
+                </ScrollView>
+                </Frame> 
+           </StackLayout>     
+        </AbsoluteLayout>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
