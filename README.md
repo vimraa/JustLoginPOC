@@ -19,10 +19,10 @@ The Application flow is as follows:
 <p>4. A Personal details page ( Details of the person who is logged into the app ).</p>
 <p>5. A Search page to list all persons and search.</p>
 
-<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Login.png" align="left" height="320" width="180" ></a>
-<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/New User.png" align="left" height="320" width="180" ></a>
-<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Home.png" align="left" height="320" width="180" ></a>
-<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Personal Detail.png" align="left" height="320" width="180" ></a>
-<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Search List.png" align="left" height="320" width="180" ></a>
+<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Login.png" align="left" height="240" width="135" ></a>
+<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/New User.png" align="left" height="240" width="135" ></a>
+<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Home.png" align="left" height="240" width="135" ></a>
+<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Personal Detail.png" align="left" height="240" width="135" ></a>
+<a href="url"><img src="https://github.com/vimraa/justloginpoc/blob/master/screenshots/Search List.png" align="left" height="240" width="135" ></a>
 
 
